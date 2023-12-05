@@ -19,12 +19,15 @@ export default StyleSheet.create ({
 
                 feed: {
                     flex: 1,
-                    // paddingVertical: 20,
+                },
+
+                partner: {
+                    flex: 1,
+                    backgroundColor: '#E9E9E9',
                 },
 
                 maps: {
                     flex: 1,
-                    // paddingVertical: 20,
                 },
             },
 

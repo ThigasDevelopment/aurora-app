@@ -1,4 +1,4 @@
-import { Image, View, TouchableOpacity } from 'react-native';
+import { Text, Image, View, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import React, { useState } from 'react';
@@ -30,6 +30,11 @@ export default function Main () {
 
     return (
         <SafeAreaView style = { style.page.container }>
+            <View style = { { flexDirection: 'row', alignItems: 'top' } }>
+                <Image style = { { resizeMode: 'contain', width: 115, height: 55 } } source = { require ('../../assets/images/logo_other.png') }/>
+                <Text style = { { fontStyle: 'italic', fontSize: 18, textAlignVertical: 'center' } }>Aurora</Text>
+            </View>
+
             <View style = { style.page[(style.page[actualPage.toLowerCase ()] && actualPage.toLowerCase () || 'container')] }>
                 <RenderPage page = { actualPage }/>
             </View>

@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import React, { useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import Config from '../utils/Config';
 import Styles from '../utils/Styles';
 
 import CustomInput from '../components/CustomInput';
@@ -31,7 +32,7 @@ export default function Login () {
 
         setLoading (true);
 
-        const response = await fetch (`https://aurora-api.onrender.com/accounts?user=${login}`, {
+        const response = await fetch (`${Config.urlAPI}/accounts?user=${login}`, {
             method: 'GET',
 
             headers: {
@@ -47,7 +48,7 @@ export default function Login () {
             return Alert.alert ('Cuidado', 'Nome de usuário ou senha incorretos.');
         }
 
-        const auth = await fetch (`https://aurora-api.onrender.com/authenticate`, {
+        const auth = await fetch (`${Config.urlAPI}/authenticate`, {
             method: 'POST',
 
             headers: {

@@ -8,6 +8,8 @@ import Main from '../pages/Main';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 
+import PartnerData from '../pages/partners/Data.js';
+
 const Stack = createNativeStackNavigator ();
 
 export default function Routes () {
@@ -15,7 +17,6 @@ export default function Routes () {
 
     async function checkLogged () {
         try {
-            await AsyncStorage.removeItem ('authkey');
             let authkey = await AsyncStorage.getItem ('authkey');
 
             setLogged (authkey);
@@ -30,6 +31,7 @@ export default function Routes () {
         return (
             <Stack.Navigator>
                 <Stack.Screen name = 'Main' component = { Main } options = { { headerShown: false } }/>
+                <Stack.Screen name = 'PartnerData' component = { PartnerData } options = { { headerShown: false } }/>
             </Stack.Navigator>
         );
     }

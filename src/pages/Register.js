@@ -3,6 +3,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import React, { useState } from 'react';
 
+import Config from '../utils/Config';
 import Styles from '../utils/Styles';
 
 import CustomInput from '../components/CustomInput';
@@ -44,7 +45,7 @@ export default function Register () {
 
         setLoading (true);
 
-        const response = await fetch (`https://aurora-api.onrender.com/accounts?user=${account}?email=${email}`, {
+        const response = await fetch (`${Config.urlAPI}/accounts?user=${account}?email=${email}`, {
             method: 'GET',
 
             headers: {
@@ -60,7 +61,7 @@ export default function Register () {
             return Alert.alert ('Cuidado', 'Uma conta com esse nome de usuário ou e - mail ja existe em nosso banco de dados.');
         }
 
-        const create = await fetch (`https://aurora-api.onrender.com/accounts`, {
+        const create = await fetch (`${Config.urlAPI}/accounts`, {
             method: 'POST',
 
             headers: {
