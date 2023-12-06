@@ -25,7 +25,7 @@ export default function RenderPage ({ page }) {
                         {
                             posts.map ((data, key) => {
                                 return (
-                                    <Text id = { key.toString () } style = { { backgroundColor: '#9B6EF3', padding: 10, margin: 5 } }>{ data.name }</Text>
+                                    <Text key = { key.toString () } style = { { backgroundColor: '#9B6EF3', padding: 10, margin: 5 } }>{ data.name }</Text>
                                 )
                             })
                         }
@@ -37,7 +37,7 @@ export default function RenderPage ({ page }) {
         return (
             <View style = { { flex: 1, alignItems: 'center', justifyContent: 'center' } }>
                 <Image style = { { resizeMode: 'contain', width: 60, height: 60 } } source = { require ('../../assets/images/bad-review.png') }/>
-                <Text>Não há nenhuma publicação aqui.</Text>
+                <Text style = { { margin: 15 } }>Não há nenhuma publicação aqui.</Text>
             </View>
         )
     }
@@ -63,8 +63,8 @@ export default function RenderPage ({ page }) {
                                 return (
                                     <View style = { { backgroundColor: '#9B6EF3', padding: 10, margin: 5, height: 50, borderRadius: 8 } }>
                                         <TouchableOpacity onPress = { () => { goPartner (data) } }>
-                                            <Text key = { `text:${ key.toString () }` } style = { { height: 25, textAlignVertical: 'center' } }>{ data.name }</Text>
-                                            <Image key = { `image:${ key.toString () }` } style = { { resizeMode: 'contain', marginLeft: '70%', top: '-48%' } } source = { data.avaliation }/>
+                                            <Text key = { `text:${ key.toString () }:partner` } style = { { height: 25, textAlignVertical: 'center' } }>{ data.name }</Text>
+                                            <Image key = { `image:${ key.toString () }:partner` } style = { { resizeMode: 'contain', marginLeft: '70%', top: '-48%' } } source = { data.avaliation }/>
                                         </TouchableOpacity>
                                     </View>
                                 )
@@ -78,7 +78,7 @@ export default function RenderPage ({ page }) {
         return (
             <SafeAreaView style = { { flex: 1, alignItems: 'center', justifyContent: 'center' } }>
                 <Image style = { { resizeMode: 'contain', width: 60, height: 60 } } source = { require ('../../assets/images/bad-review.png') }/>
-                <Text>Não há nenhum parceiro aqui.</Text>
+                <Text style = { { margin: 15 } }>Não há nenhum parceiro aqui.</Text>
             </SafeAreaView>
         )
     }
@@ -86,7 +86,7 @@ export default function RenderPage ({ page }) {
     return (
         <SafeAreaView style = { { paddingVertical: 20, alignItems: 'center', justifyContent: 'center' } }>
             <Image style = { { resizeMode: 'contain', width: 60, height: 60 } } source = { require ('../../assets/images/settings.png') }/>
-            <Text>Em desenvolvimento</Text>
+            <Text style = { { margin: 15 } }>Em desenvolvimento</Text>
         </SafeAreaView>
     )
 }

@@ -44,6 +44,7 @@ export default function Routes () {
             <Stack.Screen name = 'Register' component = { Register } options = { { headerShown: false } }/>
             
             <Stack.Screen name = 'Main' component = { Main } options = { { headerShown: false } }/>
+            <Stack.Screen name = 'PartnerData' component = { PartnerData } options = { { headerShown: false } }/>
         </Stack.Navigator>
     )
 }

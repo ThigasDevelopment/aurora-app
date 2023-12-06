@@ -10,9 +10,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -28,9 +28,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -46,9 +46,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -64,9 +64,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -82,9 +82,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -100,9 +100,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -118,9 +118,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -136,9 +136,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -154,9 +154,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -172,9 +172,9 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
             },
         }
     },
@@ -190,9 +190,27 @@ export default [
 
             social: {
                 whatsapp: '+55 (11) 9 1234-5678',
-                facebook: 'https://facebook.com/aurora_oficial',
+                facebook: '@auroraoficial',
 
-                instagram: 'https://instagram.com/aurora_oficial',
+                instagram: '@auroraoficial',
+            },
+        }
+    },
+
+    {
+        name: 'LegalMind',
+        description: 'Em nossa empresa, não aceitamos a violência contra mulheres como uma realidade tolerável. Estamos unidos em uma missão incansável para erradicar esse flagelo. Nossa abordagem vai além da conscientização; estamos construindo um ecossistema seguro por meio de parcerias com organizações de apoio, implementando políticas internas rigorosas e capacitando nossa equipe para agir como agentes de mudança. Estamos comprometidos em criar uma cultura que não apenas rejeite a agressão, mas que celebre a força, a coragem e a dignidade das mulheres.',
+
+        avaliation: require ('../../assets/images/avaliations/2.png'),
+
+        about: {
+            location: require ('../../assets/images/logo.png'),
+
+            social: {
+                whatsapp: '+55 (11) 9 1234-5678',
+                facebook: '@auroraoficial',
+
+                instagram: '@auroraoficial',
             },
         }
     },
